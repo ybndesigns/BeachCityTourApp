@@ -65,10 +65,10 @@ public class SightsFragment extends Fragment {
 
         //Making an ArrayList of BeachCityLocations to populate ListView
         final ArrayList<BeachCityLocation> sightstops = new ArrayList<BeachCityLocation>();
-        sightstops.add(new BeachCityLocation("The Boardwalk", R.drawable.boardwalk_overhead, getString(R.string.boardwalk), boardwalkPics));
-        sightstops.add(new BeachCityLocation("Beach City Water Tower", R.drawable.watertower_ontherun, getString(R.string.waterTower), watertowerPics));
-        sightstops.add(new BeachCityLocation("Beach City Pier", R.drawable.pier, getString(R.string.pier), pierPics));
-        sightstops.add(new BeachCityLocation("Dewey Park", R.drawable.deweypark_map, getString(R.string.park), parkPics));
+        sightstops.add(new BeachCityLocation(getString(R.string.boardwalkName), R.drawable.boardwalk_overhead, getString(R.string.boardwalk), boardwalkPics));
+        sightstops.add(new BeachCityLocation(getString(R.string.waterTowerName), R.drawable.watertower_ontherun, getString(R.string.waterTower), watertowerPics));
+        sightstops.add(new BeachCityLocation(getString(R.string.pierName), R.drawable.pier, getString(R.string.pier), pierPics));
+        sightstops.add(new BeachCityLocation(getString(R.string.parkName), R.drawable.deweypark_map, getString(R.string.park), parkPics));
 
         //Initializing and setting adapter on ListView
         BeachCityLocationAdapter adapter = new BeachCityLocationAdapter(getActivity(), sightstops);
@@ -84,9 +84,9 @@ public class SightsFragment extends Fragment {
 
                 Intent entryActivity = new Intent(getActivity(), EntryActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putParcelable("Entry", locationEntry); //For BeachCityLocation
-                bundle.putInt("Title Style", titleStyle); //For style applied to header title
-                bundle.putInt("Background", backgroundColor); //For background color
+                bundle.putParcelable(getString(R.string.entry), locationEntry); //For BeachCityLocation
+                bundle.putInt(getString(R.string.titleStyle), titleStyle); //For style applied to header title
+                bundle.putInt(getString(R.string.background), backgroundColor); //For background color
                 entryActivity.putExtras(bundle);
                 startActivity(entryActivity);
             }

@@ -62,10 +62,10 @@ public class FoodFragment extends Fragment {
 
         //Making an ArrayList of BeachCityLocations to populate ListView
         final ArrayList<BeachCityLocation> foodstops = new ArrayList<BeachCityLocation>();
-        foodstops.add(new BeachCityLocation("Big Donut", R.drawable.bigdonut_front1, getString(R.string.bigDonut), bigDonutPics));
-        foodstops.add(new BeachCityLocation("Fish Stew Pizza", R.drawable.fishstewpizza_logo, getString(R.string.fishStewPizza), fishStewPics));
-        foodstops.add(new BeachCityLocation("Beach Citywalk Fries", R.drawable.beachcitywalkfries_storefront2, getString(R.string.beachCitywakFries), friesPics));
-        foodstops.add(new BeachCityLocation("The Crab Shack", R.drawable.crabshack_1, getString(R.string.crabShack), crabShackPics));
+        foodstops.add(new BeachCityLocation(getString(R.string.bigDonutName), R.drawable.bigdonut_front1, getString(R.string.bigDonut), bigDonutPics));
+        foodstops.add(new BeachCityLocation(getString(R.string.fishStewPizzaName), R.drawable.fishstewpizza_logo, getString(R.string.fishStewPizza), fishStewPics));
+        foodstops.add(new BeachCityLocation(getString(R.string.beachCitywalkFriesName), R.drawable.beachcitywalkfries_storefront2, getString(R.string.beachCitywalkFries), friesPics));
+        foodstops.add(new BeachCityLocation(getString(R.string.crabShackName), R.drawable.crabshack_1, getString(R.string.crabShack), crabShackPics));
 
         //Initializing and setting adapter on ListView
         BeachCityLocationAdapter adapter = new BeachCityLocationAdapter(getActivity(), foodstops);
@@ -81,9 +81,9 @@ public class FoodFragment extends Fragment {
 
                 Intent entryActivity = new Intent(getActivity(), EntryActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putParcelable("Entry", locationEntry); //For BeachCityLocation
-                bundle.putInt("Title Style", titleStyle); //For style applied to header title
-                bundle.putInt("Background", backgroundColor); //For background color
+                bundle.putParcelable(getString(R.string.entry), locationEntry); //For BeachCityLocation
+                bundle.putInt(getString(R.string.titleStyle), titleStyle); //For style applied to header title
+                bundle.putInt(getString(R.string.background), backgroundColor); //For background color
                 entryActivity.putExtras(bundle);
                 startActivity(entryActivity);
             }

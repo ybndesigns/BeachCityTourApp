@@ -62,9 +62,9 @@ public class ServicesFragment extends Fragment {
 
         //Making an ArrayList of BeachCityLocations to populate ListView
         final ArrayList<BeachCityLocation> servicestops = new ArrayList<BeachCityLocation>();
-        servicestops.add(new BeachCityLocation("Its A Wash", R.drawable.itsawash_sign, getString(R.string.wash), itsawashPics));
-        servicestops.add(new BeachCityLocation("Buddwick Public Library", R.drawable.buddwick_front, getString(R.string.library), libraryPics));
-        servicestops.add(new BeachCityLocation("Visitors Center", R.drawable.beachcity_map, getString(R.string.visitors), visitorsPics));
+        servicestops.add(new BeachCityLocation(getString(R.string.washName), R.drawable.itsawash_sign, getString(R.string.wash), itsawashPics));
+        servicestops.add(new BeachCityLocation(getString(R.string.libraryName), R.drawable.buddwick_front, getString(R.string.library), libraryPics));
+        servicestops.add(new BeachCityLocation(getString(R.string.visitorsName), R.drawable.beachcity_map, getString(R.string.visitors), visitorsPics));
 
         //Initializing and setting adapter on ListView
         BeachCityLocationAdapter adapter = new BeachCityLocationAdapter(getActivity(), servicestops);
@@ -80,9 +80,9 @@ public class ServicesFragment extends Fragment {
 
                 Intent entryActivity = new Intent(getActivity(), EntryActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putParcelable("Entry", locationEntry); //For BeachCityLocation
-                bundle.putInt("Title Style", titleStyle); //For style applied to header title
-                bundle.putInt("Background", backgroundColor); //For background color
+                bundle.putParcelable(getString(R.string.entry), locationEntry); //For BeachCityLocation
+                bundle.putInt(getString(R.string.titleStyle), titleStyle); //For style applied to header title
+                bundle.putInt(getString(R.string.background), backgroundColor); //For background color
                 entryActivity.putExtras(bundle);
                 startActivity(entryActivity);
             }

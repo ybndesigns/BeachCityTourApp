@@ -20,7 +20,7 @@ public class EntryActivity extends AppCompatActivity {
 
         //Gathering bundled BeachCityLocation information from clicked listItem
         Bundle bundle = getIntent().getExtras();
-        BeachCityLocation locationEntry = bundle.getParcelable("Entry");
+        BeachCityLocation locationEntry = bundle.getParcelable(getString(R.string.entry));
 
         String name = locationEntry.getName();
         String infoText = locationEntry.getInfoText();
@@ -28,7 +28,7 @@ public class EntryActivity extends AppCompatActivity {
         TabLayout indicator = (TabLayout) findViewById(R.id.indicator);
 
         //Assigning value and style of title to the TextView
-        int entryTitleStyle = bundle.getInt("Title Style");
+        int entryTitleStyle = bundle.getInt(getString(R.string.titleStyle));
         TextView entryTitle = findViewById(R.id.entry_title);
         entryTitle.setText(name);
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -46,7 +46,7 @@ public class EntryActivity extends AppCompatActivity {
         }
 
         //Gathering bundled information of background color of prior fragment and changing EntryActivity to match
-        int entryBackground = bundle.getInt("Background");
+        int entryBackground = bundle.getInt(getString(R.string.background));
         LinearLayout entryLayout = findViewById(R.id.entry_main);
         entryLayout.setBackgroundColor(getResources().getColor(entryBackground));
 

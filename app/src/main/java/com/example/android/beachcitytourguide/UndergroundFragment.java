@@ -67,11 +67,11 @@ public class UndergroundFragment extends Fragment {
 
         //Making an ArrayList of BeachCityLocations to populate ListView
         final ArrayList<BeachCityLocation> secretspots = new ArrayList<BeachCityLocation>();
-        secretspots.add(new BeachCityLocation("Keep Beach City Weird", R.drawable.keepbeachcityweird_ronaldo, getString(R.string.kbcw), kbcwPics));
-        secretspots.add(new BeachCityLocation("Abandoned Warehouse", R.drawable.abandonedwarehouse_dance, getString(R.string.warehouse), warehousePics));
-        secretspots.add(new BeachCityLocation("Street Racing", R.drawable.speedracing_hill, getString(R.string.races), racingPics));
-        secretspots.add(new BeachCityLocation("The Lighthouse", R.drawable.lighthouse_sunset, getString(R.string.lighthouse), lighthousePics));
-        secretspots.add(new BeachCityLocation("Crystal Temple", R.drawable.crystaltemple_headon, getString(R.string.temple), templePics));
+        secretspots.add(new BeachCityLocation(getString(R.string.kbcwName), R.drawable.keepbeachcityweird_ronaldo, getString(R.string.kbcw), kbcwPics));
+        secretspots.add(new BeachCityLocation(getString(R.string.warehouseName), R.drawable.abandonedwarehouse_dance, getString(R.string.warehouse), warehousePics));
+        secretspots.add(new BeachCityLocation(getString(R.string.racesName), R.drawable.speedracing_hill, getString(R.string.races), racingPics));
+        secretspots.add(new BeachCityLocation(getString(R.string.lighthouseName), R.drawable.lighthouse_sunset, getString(R.string.lighthouse), lighthousePics));
+        secretspots.add(new BeachCityLocation(getString(R.string.templeName), R.drawable.crystaltemple_headon, getString(R.string.temple), templePics));
 
         //Initializing and setting adapter on ListView
         BeachCityLocationAdapter adapter = new BeachCityLocationAdapter(getActivity(), secretspots);
@@ -87,9 +87,9 @@ public class UndergroundFragment extends Fragment {
 
                 Intent entryActivity = new Intent(getActivity(), EntryActivity.class);
                 Bundle bundle = new Bundle();
-                bundle.putParcelable("Entry", locationEntry); //For BeachCityLocation
-                bundle.putInt("Title Style", titleStyle); //For style applied to header title
-                bundle.putInt("Background", backgroundColor); //For background color
+                bundle.putParcelable(getString(R.string.entry), locationEntry); //For BeachCityLocation
+                bundle.putInt(getString(R.string.titleStyle), titleStyle); //For style applied to header title
+                bundle.putInt(getString(R.string.background), backgroundColor); //For background color
                 entryActivity.putExtras(bundle);
                 startActivity(entryActivity);
             }

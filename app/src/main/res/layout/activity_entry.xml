@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/entry_main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -33,7 +34,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text="Back"/>
+                android:text="@string/back"/>
 
         </LinearLayout>
 
@@ -69,13 +70,13 @@
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:padding="@dimen/margin_tnb"
-                android:text="Name of Place" />
+                tools:text="@string/name_test" />
 
             <TextView
                 android:id="@+id/info_paragraph"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:text="@string/filler_paragraph" />
+                tools:text="@string/filler_paragraph" />
 
         </LinearLayout>
 
