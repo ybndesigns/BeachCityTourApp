@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_fun"
+        android:icon="@drawable/ic_fun"
+        android:title="@string/fun_tab"/>
+
+    <item
+        android:id="@+id/menu_food"
+        android:icon="@drawable/ic_food"
+        android:title="@string/food_tab"/>
+
+    <item
+        android:id="@+id/menu_sights"
+        android:icon="@drawable/ic_sights"
+        android:title="@string/sights_tab"/>
+
+    <item
+        android:id="@+id/menu_services"
+        android:icon="@drawable/ic_services"
+        android:title="@string/services_tab"/>
+
+    <item
+        android:id="@+id/menu_underground"
+        android:icon="@drawable/ic_underground"
+        android:title="@string/underground"/>
+</menu>

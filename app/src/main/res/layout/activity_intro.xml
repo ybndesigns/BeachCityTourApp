@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundAzureWhite"
+    tools:context=".IntroActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/margin_sides"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:text="@string/come_experience"/>
+
+    <com.example.android.beachcitytourguide.CustomViewPager
+        android:id="@+id/intro_slideshow"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_alignParentTop="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/beachcity_wordprint" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_above="@id/su_logo"
+        android:layout_centerHorizontal="true"
+        android:text="@string/as_seen_on" />
+
+    <ImageView
+        android:id="@+id/su_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:scaleType="fitCenter"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/extra_stuff"
+        android:src="@drawable/steven_universe_logo" />
+
+    <LinearLayout
+        android:id="@+id/extra_stuff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_sides"
+        android:layout_alignParentBottom="true">
+
+    <Button
+        android:id="@+id/to_the_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/click_here" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_tnb"
+        android:text="@string/explanation"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/margin_tnb"
+        android:text="@string/disclaimer"
+        android:textSize="10sp" />
+</LinearLayout>
+</RelativeLayout>

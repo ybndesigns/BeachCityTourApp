@@ -1,0 +1,89 @@
+<resources>
+    <string name="app_name">Beach City Tour Guide</string>
+    <string name="fun_tab">Fun</string>
+    <string name="food_tab">Food</string>
+    <string name="sights_tab">Sights</string>
+    <string name="services_tab">Services</string>
+    <string name="underground">The Underground</string>
+
+    
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="filler_paragraph">This is a filler paragraph. It is full of filler. Maybe it has a little joy or
+        a little sadness. Most likely it contains confusion and boredom. But someone could not be bothered to fill
+        this area with its intended content, so here is this paragraph instead. Full of filler. You should pity the
+        person who decided to write this. Most people would go the route of Loren Ipsum or the like, but this person
+        did not want to be bothered to find some nonsense with just the correct length. So instead they decided to
+        write, stream of consciousness style, until they found the length satisfactory. One could say this was a
+        monster of their own making. Or perhaps you sympathize with this poor soul and their illogical perfectionism.
+        No matter, regardless of the stance that you, the reader, takes, it still leaves you with this paragraph.
+        Full of filler.</string>
+
+
+    <string name="explanation">This app is in universe, copy written by Mayor Dewey and developed by Ronaldo Fryman.</string>
+    <string name="disclaimer">Steven Universe™ was created by Rebecca Sugar and is a trademark of Cartoon Network.</string>
+    <string name="as_seen_on">as seen on</string>
+    <string name="come_experience">Come Experience</string>
+    <string name="click_here">Click here!</string>
+    
+    <string name="bigDonut">Welcome to Beach City\'s great Big Donut! We have the greatest donuts in the world!!
+        Stop on by for breakfast, for lunch, supper, or even if you\'ve just got a craving!</string>
+
+    <string name="fishStewPizza">On the boardwalk right next to Beach Citywalk Fries we have Fish Stew Pizza!
+        The greatest pizzeria you\'ll ever find! They even deliver!!</string>
+
+    <string name="beachCitywakFries">Right next to Fish Stew Pizza we have Beach Citywalk Fries!! The greatest
+         place to get your greasy fast food fix! Every morning they have a breakfast special for Hasbrowns!</string>
+    
+    <string name="crabShack">If you\'re looking for something a bit different, come to The Crab Shack!! Located just past
+        Beach City Funland, this is the best restaurant to satisfy all of your seafood needs!</string>
+
+    <string name="beach">What good would a city named \'Beach City\' be without an actual Beach!! That\'s right! Come
+        down to the beach to get jiggy with some surfing, Get down with the funky fresh hipping and hopping concerts,
+        or even just relax in the sun with a nice book! The Beach has it all!!! (Concerts and events are not guaranteed.
+        Check with the event calendar to find out when any events are scheduled.)</string>
+
+    <string name="arcade">Down on the Boardwalk we have the greatest Arcade in the world! Come on down to play these exciting
+        Arcade video game boxes! They will blow your mind!</string>
+
+    <string name="amusementpark">Want something that will get your heart racing and adrenaline pumping? Come to Funland Amusement
+        Park!! We have all of the most exhilarating and exciting rides in the world!</string>
+
+    <string name="theater">Want to just sit and relax for a while? Come to Beach City Theater! We have all the latest and greatest films!</string>
+    
+    <string name="boardwalk">Down on the Boardwalk we\'ve got restaurants and entertainment! Take a simple stroll, or come and play!</string>
+    
+    <string name="waterTower">Come see the legendary Beach City Water Tower! Unlike most Water Towers ours is a breathtaking work of art! Don\'t
+        wait to see it!</string>
+
+    <string name="pier">Come on down to the Beach City Pier!! Enjoy the Fantastic Ocean View or cast out a line and catch some fish!</string>
+
+    <string name="park">Come to the Greatest attraction in the whole of Beach City! Dewey Park! Named for the legendary founder of Beach City,
+        Dewey Park celebrates the best parts of Beach City with the most beautiful park you\'ll have ever seen!</string>
+
+    <string name="wash">While you\'re in town swing by our car wash! It\'s a Wash will make you feel like Royalty!</string>
+
+    <string name="library">Want to learn more about Beach City and the great Dewey Line that built it all? Stop by the library!
+        We have every book you\'ll ever want or need!</string>
+
+    <string name="visitors">Please stop by our Visitor\'s center! We can answer all of your questions and provide you with various
+        maps and event schedules!</string>
+
+    <string name="warehouse">On the outside, just a normal, every day, run down warehouse. But! Little would anyone suspect,
+        at night this Warehouse is the host of an underground wrestling ring! Doubling as a popular spot for crazy parties, this
+        Warehouse holds more dangers and secrets than you could ever believe!</string>
+
+    <string name="races">If you\'re lucky, you may stumble upon beach city\'s secret street races! Following a schedule known only to
+        those in the know, these races are highly illegal and highly dangerous.</string>
+
+    <string name="lighthouse">Home of the infamous Keep Beach City Weird headquarters, the Lighthouse is one of the creepiest and most
+        mysterious places in the world! Only the truly stalwart, like those employed by KBCW, are brave enough to venture into these lands!</string>
+
+    <string name="temple">Underneath the cliff that houses the Lighthouse, lives the most mysterious secret of Beach City. The Crystal Gems!
+        Survivors of an alien race, the Crystal Gems are here to protect Beach City. Or are they?!</string>
+
+    <string name="kbcw">Beach City, a sleepy sea side town. From far away it looks ordinary, but take
+        a closer look and you\'ll start to notice the cracks in the facade. Congratulations to you for finding
+        the hidden section about the mysterious underbelly of Beach City. Perhaps you are also a seeker of truth beyond what meets the eye?
+        My name is Ronaldo, for years I\'ve run a blog called Keep Beach City Weird! My mission?  Keep Beach City Weird and to reveal the truth!</string>
+
+</resources>

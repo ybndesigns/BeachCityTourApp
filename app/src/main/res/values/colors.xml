@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#4794c4</color>
+    <color name="colorPrimaryDark">#2c3671</color>
+    <color name="colorAccent">#79E2E7</color>
+
+    <color name="backgroundPapayaWhip">#FEEFDC</color>
+
+    <color name="backgroundAzureWhite">#DAF7F8</color>
+
+
+    <color name="backgroundGreen">#D9E7DE</color>
+    <color name="backgroundPlatinum">#DEE6E7</color>
+
+    <color name="richBlack">#0C0D16</color>
+
+    <color name="transparentBlack">#76000000</color>
+</resources>
