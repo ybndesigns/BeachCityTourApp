@@ -27,10 +27,10 @@ public class BeachCityLocationAdapter extends ArrayAdapter { //Adapter to allow 
 
         BeachCityLocation currentLocation = (BeachCityLocation) getItem(position);
 
-        ImageView listImageView = (ImageView) listItemView.findViewById(R.id.list_image_view);
+        ImageView listImageView = listItemView.findViewById(R.id.list_image_view);
         listImageView.setImageResource(currentLocation.getPhoto());
 
-        TextView listTextView = (TextView) listItemView.findViewById(R.id.list_text_view);
+        TextView listTextView = listItemView.findViewById(R.id.list_text_view);
         listTextView.setText(currentLocation.getName());
 
         return listItemView;

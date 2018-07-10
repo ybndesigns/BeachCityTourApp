@@ -25,7 +25,7 @@ public class EntryActivity extends AppCompatActivity {
         String name = locationEntry.getName();
         String infoText = locationEntry.getInfoText();
         int[] slideshow = locationEntry.getSlideshow();
-        TabLayout indicator = (TabLayout) findViewById(R.id.indicator);
+        TabLayout indicator = findViewById(R.id.indicator);
 
         //Assigning value and style of title to the TextView
         int entryTitleStyle = bundle.getInt(getString(R.string.titleStyle));
